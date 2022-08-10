@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORM KTP</title>
+    <style>
+        .table {
+            width: 100%;
+            border: 1px solid;
+        }
+    </style>
+    <style>
+        .none {
+            border-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-family:Arial, Helvetica, sans-serif;" align="center">
+        FORMULIR PERMOHONAN KARTU TANDA PENDUDUK (KTP) WARGA NEGARA INDONESIA</h1>
+    <table class="table">
+        <tr>
+            <td>
+                <b>Perhatian :</b>
+                <ol type="1">
+                    <li>Harap diisi dengan huruf cetak dan menggunakan tinta hitam</li>
+                    <li>Untuk kolom pilihan, harap memberi tanda silang (X) pada kotak pilihan</li>
+                    <li>Setelah formulir ini diisi dan ditandatangani, harap diserahkankembali ke kantor Desa/Kelurahan
+                    </li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <form action="">
+        <table class="none">
+            <tr>
+                <td><label for="PROPINSI">PEMERINTAH PROPINSI</label></td>
+                <td>:</td>
+                <td><input type="text" name="PROPINSI" id="PROPINSI" placeholder=""></td>
+            </tr>
+            <tr>
+                <td><label for="KABUPATEN">PEMERINTAH KABUPATEN/KOTA</label></td>
+                <td>:</td>
+                <td><input type="text" name="KABUPATEN" id="KABUPATEN" placeholder=""></td>
+            </tr>
+            <tr>
+                <td><label for="KECAMATAN">KECAMATAN</label></td>
+                <td>:</td>
+                <td><input type="text" name="KECAMATAN" id="KECAMATAN" placeholder=""></td>
+            </tr>
+            <tr>
+                <td><label for="KELURAHAN">KELURAHAN/DESA</label></td>
+                <td>:</td>
+                <td><input type="text" name="KELURAHAN" id="KECAMATAN" placeholder=""></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td align="left" class="hidden"><i><u>PERMOHONAN KTP</u></i></td>
+                <td><input type="radio" value="Baru"></td>
+                <td><label for="Baru">A. Baru</label></td>
+                <td><input type="radio" value="Perpanjangan"></td>
+                <td><label for="Perpanjangan">B. Perpanjangan</label></td>
+                <td><input type="radio" value="Penggantian"></td>
+                <td><label for="Penggantian">C. Penggantian</label></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>1. Nama Lengkap</td>
+                <td><input type="text" name="nama" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>2. No KK</td>
+                <td><input type="number" name="nomerkk" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>3. NIK</td>
+                <td><input type="number" name="NIK" placeholder=""></td>
+            </tr>
+            <tr>
+                <td>4. Alamat</td>
+                <td><textarea name="alamat" id="alamat" cols="21" rows="1"></textarea></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>RT</td>
+                <td><input type="number" name="RT" placeholder=""></td>
+                <td>RW</td>
+                <td><input type="number" name="RW" placeholder=""></td>
+                <td>Kode Pos</td>
+                <td><input type="number" name="POS" placeholder=""></td>
+
+            </tr>
+        </table>
+        <br>
+        <table border="1" style="border-collapse: collapse;">
+            <tr>
+                <th>Part Foto (2x3)</th>
+                <th>Cap Jempol</th>
+                <th>Tanda Tangan</th>
+            </tr>
+            <tr>
+                <td rowspan="2"><br><br><br><br><br></td>
+                <td rowspan="2"></td>
+                <td><br><br><br></td>
+            </tr>
+            <tr>
+                <td class="none">Ket.Cap Jempol/Tanda Tangan</td>
+            </tr>
+        </table>
+        <pre style="margin-right: 60%; font-size: 115%; float: right ; text-align: left;"
+            align="right">.............................<br><p align="center">Pemohon,</p><br><br><br><p align="center">(....................)</p></pre>
+    </form>
+</body>
+</html>
